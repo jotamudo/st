@@ -5,10 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FiraCodeNerdFont:size=16:style=Retina:antialias=true:autohint=true";
+static char *font = "FiraCodeNerdFont:size=14:style=Retina:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-    "Joypixels:pixelsize=16:antialias=true:style=Regular",
+    "Joypixels:pixelsize=14:antialias=true:style=Regular",
 /*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
 /*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
 };
@@ -99,7 +99,7 @@ char *termname = "st-256color";
  *	stty tabs
  */
 /* bg opacity*/
-float alpha = 0.8;
+float alpha = 0.9;
 
 unsigned int tabspaces = 8;
 
@@ -164,11 +164,24 @@ static unsigned int defaultrcs = 15;
 static unsigned int cursorshape = 2;
 
 /*
+ * Whether to use pixel geometry or cell geometry
+ */
+
+static Geometry geometry = CellGeometry;
+
+/*
  * Default columns and rows numbers
  */
 
 static unsigned int cols = 80;
 static unsigned int rows = 24;
+
+/*
+ * Default width and height (including borders!)
+ */
+
+static unsigned int width = 564;
+static unsigned int height = 364;
 
 /*
  * Default colour and shape of the mouse cursor
