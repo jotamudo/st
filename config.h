@@ -5,10 +5,13 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FiraCodeNerdFont:size=14:style=Retina:antialias=true:autohint=true";
+//static char *font = "FiraCodeNerdFont:size=14:style=Retina:antialias=true:autohint=true";
+//static char *font = "BlexMono Nerd Font Mono:style=Medium:size=14:antialias=true:autohint=true";
+static char *font = "Iosevka Nerd Font Mono:style=Medium:size=12:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-    "Joypixels:pixelsize=14:antialias=true:style=Regular",
+    "Joypixels:pixelsize=12:antialias=true:style=Regular",
+    "FiraCodeNerdFont:size=12:style=Retina:antialias=true:autohint=true"
 /*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
 /*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
 };
@@ -105,54 +108,89 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* solarized dark */
-	"#073642",  /*  0: black    */
-	"#dc322f",  /*  1: red      */
-	"#859900",  /*  2: green    */
-	"#b58900",  /*  3: yellow   */
-	"#268bd2",  /*  4: blue     */
-	"#d33682",  /*  5: magenta  */
-	"#2aa198",  /*  6: cyan     */
-	"#eee8d5",  /*  7: white    */
-	"#002b36",  /*  8: brblack  */
-	"#cb4b16",  /*  9: brred    */
-	"#586e75",  /* 10: brgreen  */
-	"#657b83",  /* 11: bryellow */
-	"#839496",  /* 12: brblue   */
-	"#6c71c4",  /* 13: brmagenta*/
-	"#93a1a1",  /* 14: brcyan   */
-	"#fdf6e3",  /* 15: brwhite  */
+	/* gruvbox dark */
+    "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
+    "#cc241d", /* red     */
+    "#98971a", /* green   */
+    "#d79921", /* yellow  */
+    "#458588", /* blue    */
+    "#b16286", /* magenta */
+    "#689d6a", /* cyan    */
+    "#a89984", /* white   */
+    "#928374", /* black   */
+    "#fb4934", /* red     */
+    "#b8bb26", /* green   */
+    "#fabd2f", /* yellow  */
+    "#83a598", /* blue    */
+    "#d3869b", /* magenta */
+    "#8ec07c", /* cyan    */
+    "#ebdbb2", /* white   */
+    //Solarized dark
+	//"#073642",  [>  0: black    <]
+	//"#dc322f",  [>  1: red      <]
+	//"#859900",  [>  2: green    <]
+	//"#b58900",  [>  3: yellow   <]
+	//"#268bd2",  [>  4: blue     <]
+	//"#d33682",  [>  5: magenta  <]
+	//"#2aa198",  [>  6: cyan     <]
+	//"#eee8d5",  [>  7: white    <]
+	//"#002b36",  [>  8: brblack  <]
+	//"#cb4b16",  [>  9: brred    <]
+	//"#586e75",  [> 10: brgreen  <]
+	//"#657b83",  [> 11: bryellow <]
+	//"#839496",  [> 12: brblue   <]
+	//"#6c71c4",  [> 13: brmagenta<]
+	//"#93a1a1",  [> 14: brcyan   <]
+	//"#fdf6e3",  [> 15: brwhite  <]
 };
 
 /* Terminal colors for alternate (light) palette */
 static const char *altcolorname[] = {
-	/* solarized light */
-	"#eee8d5",  /*  0: black    */
-	"#dc322f",  /*  1: red      */
-	"#859900",  /*  2: green    */
-	"#b58900",  /*  3: yellow   */
-	"#268bd2",  /*  4: blue     */
-	"#d33682",  /*  5: magenta  */
-	"#2aa198",  /*  6: cyan     */
-	"#073642",  /*  7: white    */
-	"#fdf6e3",  /*  8: brblack  */
-	"#cb4b16",  /*  9: brred    */
-	"#93a1a1",  /* 10: brgreen  */
-	"#839496",  /* 11: bryellow */
-	"#657b83",  /* 12: brblue   */
-	"#6c71c4",  /* 13: brmagenta*/
-	"#586e75",  /* 14: brcyan   */
-	"#002b36",  /* 15: brwhite  */
+	/* gruvbox light */
+    //"#fbf1c7", [> hard contrast: #f9f5d7 / soft contrast: #f2e5bc <]
+    "#f2e5bc", /* hard contrast: #f9f5d7 / soft contrast: #f2e5bc */
+    "#cc241d", /* red     */
+    "#98971a", /* green   */
+    "#d79921", /* yellow  */
+    "#458588", /* blue    */
+    "#b16286", /* magenta */
+    "#689d6a", /* cyan    */
+    "#7c6f64", /* white   */
+    "#928374", /* black   */
+    "#9d0006", /* red     */
+    "#79740e", /* green   */
+    "#b57614", /* yellow  */
+    "#076678", /* blue    */
+    "#8f3f71", /* magenta */
+    "#427b58", /* cyan    */
+    "#3c3836", /* white   */
+    //Solarized light
+	//"#eee8d5",  [>  0: black    <]
+	//"#dc322f",  [>  1: red      <]
+	//"#859900",  [>  2: green    <]
+	//"#b58900",  [>  3: yellow   <]
+	//"#268bd2",  [>  4: blue     <]
+	//"#d33682",  [>  5: magenta  <]
+	//"#2aa198",  [>  6: cyan     <]
+	//"#073642",  [>  7: white    <]
+	//"#fdf6e3",  [>  8: brblack  <]
+	//"#cb4b16",  [>  9: brred    <]
+	//"#93a1a1",  [> 10: brgreen  <]
+	//"#839496",  [> 11: bryellow <]
+	//"#657b83",  [> 12: brblue   <]
+	//"#6c71c4",  [> 13: brmagenta<]
+	//"#586e75",  [> 14: brcyan   <]
+	//"#002b36",  [> 15: brwhite  <]
 };
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 12;
-unsigned int defaultbg = 8;
-static unsigned int defaultcs = 14;
-static unsigned int defaultrcs = 15;
+unsigned int defaultfg = 15;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 15;
+static unsigned int defaultrcs = 257;
 
 /*
  * Default shape of cursor
