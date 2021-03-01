@@ -8,8 +8,9 @@
 //static char *font = "FiraCodeNerdFont:size=14:style=Retina:antialias=true:autohint=true";
 //static char *font = "BlexMono Nerd Font Mono:style=Medium:size=14:antialias=true:autohint=true";
 //static char *font = "Iosevka Nerd Font Mono:style=Medium:size=12:antialias=true:autohint=true";
+static char *font = "CozetteVector:size=12:antialias=true:autohint=true";
 //static char *font = "Ligamonacop:style=Regular:size=12:antialias=true:autohint=true";
-static char *font = "Hermit:style=Regular:size=12:antialias=true:autohint=true";
+//static char *font = "Hermit:style=Regular:size=12:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
     "Joypixels:pixelsize=12:antialias=true:style=Regular",

@@ -1,5 +1,6 @@
 /* See LICENSE for license details. */
 #include <errno.h>
+#include <fontconfig/fontconfig.h>
 #include <math.h>
 #include <limits.h>
 #include <locale.h>
