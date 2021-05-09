@@ -10,7 +10,7 @@
 //static char *font = "Iosevka Nerd Font Mono:style=Medium:size=12:antialias=true:autohint=true";
 /* static char *font = "CozetteVector:size=12:antialias=true:autohint=true"; */
 /* static char *font = "scientifica:size=13.5"; */
-static char *font = "Terminus (TTF):size=13:antialias=true:autohint=true";
+static char *font = "Terminus (TTF):size=11:antialias=true:autohint=true";
 //static char *font = "Ligamonacop:style=Regular:size=12:antialias=true:autohint=true";
 //static char *font = "Hermit:style=Regular:size=12:antialias=true:autohint=true";
 /* Spare fonts */
@@ -116,78 +116,78 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* gruvbox dark */
-    "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-    "#cc241d", /* red     */
-    "#98971a", /* green   */
-    "#d79921", /* yellow  */
-    "#458588", /* blue    */
-    "#b16286", /* magenta */
-    "#689d6a", /* cyan    */
-    "#a89984", /* white   */
-    "#928374", /* black   */
-    "#fb4934", /* red     */
-    "#b8bb26", /* green   */
-    "#fabd2f", /* yellow  */
-    "#83a598", /* blue    */
-    "#d3869b", /* magenta */
-    "#8ec07c", /* cyan    */
-    "#ebdbb2", /* white   */
+    /* "#282828", /1* hard contrast: #1d2021 / soft contrast: #32302f *1/ */
+    /* "#cc241d", /1* red     *1/ */
+    /* "#98971a", /1* green   *1/ */
+    /* "#d79921", /1* yellow  *1/ */
+    /* "#458588", /1* blue    *1/ */
+    /* "#b16286", /1* magenta *1/ */
+    /* "#689d6a", /1* cyan    *1/ */
+    /* "#a89984", /1* white   *1/ */
+    /* "#928374", /1* black   *1/ */
+    /* "#fb4934", /1* red     *1/ */
+    /* "#b8bb26", /1* green   *1/ */
+    /* "#fabd2f", /1* yellow  *1/ */
+    /* "#83a598", /1* blue    *1/ */
+    /* "#d3869b", /1* magenta *1/ */
+    /* "#8ec07c", /1* cyan    *1/ */
+    /* "#ebdbb2", /1* white   *1/ */
     //Solarized dark
-	//"#073642",  [>  0: black    <]
-	//"#dc322f",  [>  1: red      <]
-	//"#859900",  [>  2: green    <]
-	//"#b58900",  [>  3: yellow   <]
-	//"#268bd2",  [>  4: blue     <]
-	//"#d33682",  [>  5: magenta  <]
-	//"#2aa198",  [>  6: cyan     <]
-	//"#eee8d5",  [>  7: white    <]
-	//"#002b36",  [>  8: brblack  <]
-	//"#cb4b16",  [>  9: brred    <]
-	//"#586e75",  [> 10: brgreen  <]
-	//"#657b83",  [> 11: bryellow <]
-	//"#839496",  [> 12: brblue   <]
-	//"#6c71c4",  [> 13: brmagenta<]
-	//"#93a1a1",  [> 14: brcyan   <]
-	//"#fdf6e3",  [> 15: brwhite  <]
+	"#073642",  //[>  0: black    <]
+	"#dc322f",  //[>  1: red      <]
+	"#859900",  //[>  2: green    <]
+	"#b58900",  //[>  3: yellow   <]
+	"#268bd2",  //[>  4: blue     <]
+	"#d33682",  //[>  5: magenta  <]
+	"#2aa198",  //[>  6: cyan     <]
+	"#eee8d5",  //[>  7: white    <]
+	"#002b36",  //[>  8: brblack  <]
+	"#cb4b16",  //[>  9: brred    <]
+	"#586e75",  //[> 10: brgreen  <]
+	"#657b83",  //[> 11: bryellow <]
+	"#839496",  //[> 12: brblue   <]
+	"#6c71c4",  //[> 13: brmagenta<]
+	"#93a1a1",  //[> 14: brcyan   <]
+	"#fdf6e3",  //[> 15: brwhite  <]
 };
 
 /* Terminal colors for alternate (light) palette */
 static const char *altcolorname[] = {
 	/* gruvbox light */
     //"#fbf1c7", [> hard contrast: #f9f5d7 / soft contrast: #f2e5bc <]
-    "#f2e5bc", /* hard contrast: #f9f5d7 / soft contrast: #f2e5bc */
-    "#cc241d", /* red     */
-    "#98971a", /* green   */
-    "#d79921", /* yellow  */
-    "#458588", /* blue    */
-    "#b16286", /* magenta */
-    "#689d6a", /* cyan    */
-    "#7c6f64", /* white   */
-    "#928374", /* black   */
-    "#9d0006", /* red     */
-    "#79740e", /* green   */
-    "#b57614", /* yellow  */
-    "#076678", /* blue    */
-    "#8f3f71", /* magenta */
-    "#427b58", /* cyan    */
-    "#3c3836", /* white   */
+    /* "#f2e5bc", /1* hard contrast: #f9f5d7 / soft contrast: #f2e5bc *1/ */
+    /* "#cc241d", /1* red     *1/ */
+    /* "#98971a", /1* green   *1/ */
+    /* "#d79921", /1* yellow  *1/ */
+    /* "#458588", /1* blue    *1/ */
+    /* "#b16286", /1* magenta *1/ */
+    /* "#689d6a", /1* cyan    *1/ */
+    /* "#7c6f64", /1* white   *1/ */
+    /* "#928374", /1* black   *1/ */
+    /* "#9d0006", /1* red     *1/ */
+    /* "#79740e", /1* green   *1/ */
+    /* "#b57614", /1* yellow  *1/ */
+    /* "#076678", /1* blue    *1/ */
+    /* "#8f3f71", /1* magenta *1/ */
+    /* "#427b58", /1* cyan    *1/ */
+    /* "#3c3836", /1* white   *1/ */
     //Solarized light
-	//"#eee8d5",  [>  0: black    <]
-	//"#dc322f",  [>  1: red      <]
-	//"#859900",  [>  2: green    <]
-	//"#b58900",  [>  3: yellow   <]
-	//"#268bd2",  [>  4: blue     <]
-	//"#d33682",  [>  5: magenta  <]
-	//"#2aa198",  [>  6: cyan     <]
-	//"#073642",  [>  7: white    <]
-	//"#fdf6e3",  [>  8: brblack  <]
-	//"#cb4b16",  [>  9: brred    <]
-	//"#93a1a1",  [> 10: brgreen  <]
-	//"#839496",  [> 11: bryellow <]
-	//"#657b83",  [> 12: brblue   <]
-	//"#6c71c4",  [> 13: brmagenta<]
-	//"#586e75",  [> 14: brcyan   <]
-	//"#002b36",  [> 15: brwhite  <]
+	"#eee8d5",  //[>  0: black    <]
+	"#dc322f",  //[>  1: red      <]
+	"#859900",  //[>  2: green    <]
+	"#b58900",  //[>  3: yellow   <]
+	"#268bd2",  //[>  4: blue     <]
+	"#d33682",  //[>  5: magenta  <]
+	"#2aa198",  //[>  6: cyan     <]
+	"#073642",  //[>  7: white    <]
+	"#fdf6e3",  //[>  8: brblack  <]
+	"#cb4b16",  //[>  9: brred    <]
+	"#93a1a1",  //[> 10: brgreen  <]
+	"#839496",  //[> 11: bryellow <]
+	"#657b83",  //[> 12: brblue   <]
+	"#6c71c4",  //[> 13: brmagenta<]
+	"#586e75",  //[> 14: brcyan   <]
+	"#002b36",  //[> 15: brwhite  <]
 };
 
 /*
