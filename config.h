@@ -5,20 +5,21 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-//static char *font = "FiraCodeNerdFont:size=14:style=Retina:antialias=true:autohint=true";
-//static char *font = "BlexMono Nerd Font Mono:style=Medium:size=14:antialias=true:autohint=true";
-//static char *font = "Iosevka Nerd Font Mono:style=Medium:size=12:antialias=true:autohint=true";
+/* static char *font = "FiraCodeNerdFont:size=14:style=Retina:antialias=true:autohint=true"; */
+/* static char *font = "BlexMono Nerd Font Mono:style=Medium:size=14:antialias=true:autohint=true"; */
+static char *font = "Iosevka Nerd Font Mono:style=Medium:size=12:antialias=true:autohint=true";
 /* static char *font = "CozetteVector:size=12:antialias=true:autohint=true"; */
 /* static char *font = "scientifica:size=13.5"; */
-static char *font = "Terminus (TTF):size=13:antialias=true:autohint=true";
-//static char *font = "Ligamonacop:style=Regular:size=12:antialias=true:autohint=true";
-//static char *font = "Hermit:style=Regular:size=12:antialias=true:autohint=true";
+/* static char *font = "Terminus (TTF):size=13:antialias=true:autohint=true"; */
+/* static char *font = "JetBrainsMono Nerd Font Mono:style=Medium:size=12.75:antialias=true:autohint=true"; */
+/* static char *font = "Ligamonacop:style=Regular:size=12:antialias=true:autohint=true"; */
+/* static char *font = "Hermit:style=Regular:size=12:antialias=true:autohint=true"; */
 /* Spare fonts */
 static char *font2[] = {
-    "scientifica:size=13.5:style=bold",
     "Joypixels:pixelsize=12:antialias=true:style=Regular",
-    "CozetteVector:size=12:antialias=true:autohint=true",
-    "FiraCodeNerdFont:size=12:style=Retina:antialias=true:autohint=true"
+    "FiraCodeNerdFont:size=12:style=Retina:antialias=true:autohint=true",
+    "scientifica:size=13.5:style=bold",
+    "CozetteVector:size=12:antialias=true:autohint=true"
 /*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
 /*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
 };
